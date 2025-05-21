@@ -1,0 +1,26 @@
+manifest:
+  version: "0.13"
+
+  remotes:
+    - name: 6tron
+      url-base: https://github.com/catie-aq
+    - name: cisteme
+      url-base: https://github.com/QPCisteme
+  
+  projects:
+    # Import CATIE Manifest
+    - name: zephyr_6tron-manifest
+      remote: 6tron
+      revision: main
+      import:
+        true
+    
+    # Import CISTEME drivers
+    - name: cisteme_bme280
+      remote: cisteme
+      revision: main
+      path: cisteme/bme280
+    - name: cisteme_template
+      remote: cisteme
+      revision: main
+      path: cisteme/template
