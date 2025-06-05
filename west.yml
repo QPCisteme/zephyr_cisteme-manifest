@@ -19,8 +19,12 @@ manifest:
     - name: cisteme_bme280
       remote: cisteme
       revision: main
-      path: cisteme/bme280
+      path: cisteme/drivers/bme280
     - name: cisteme_template
       remote: cisteme
       revision: main
       path: cisteme/template
+    - name: cisteme_mx25r
+      remote: cisteme
+      revision: main
+      path: cisteme/drivers/mx25r
